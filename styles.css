@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  font-family: monospace;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* h1 */
+h1 {
+  margin-bottom: 30px;
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* #map */
+/* this is mandatory */
+#map-div {
+  width: 800px;
+  height: 350px;
+  box-shadow: 7px -2px 8px -1px rgba(0,0,0,0.7);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+/* #details */
+#details {
+  background-color: #2B32B2;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  width: 800px;
+  max-width: 800px;
+  box-shadow: 7px -2px 8px -1px rgba(0,0,0,0.7);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* all div inside #details */
+#details div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* all span */
+span {
+  font-size: 1rem;
+  margin-top: 10px;
+}
