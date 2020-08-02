@@ -45,10 +45,10 @@ function findISS() {
     lat = data.latitude.toFixed(2);
     long = data.longitude.toFixed(2);
     // convert seconds to milliseconds, then to UTC format
-    timestamp = new Date(data.timestamp * 1000).toUTCString();
-    speed = data.velocity.toFixed(2);
-    altitude = data.altitude.toFixed(2);
-    visibility = data.visibility;
+    const timestamp = new Date(data.timestamp * 1000).toUTCString();
+    const speed = data.velocity.toFixed(2);
+    const altitude = data.altitude.toFixed(2);
+    const visibility = data.visibility;
 
     // call updateISS() function to update things
     updateISS(lat, long, timestamp, speed, altitude, visibility);
